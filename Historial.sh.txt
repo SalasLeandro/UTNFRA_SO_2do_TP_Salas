@@ -1,0 +1,448 @@
+salas@TP2:~$ history
+    1  cd
+    2  git clone https://github.com/upszot/UTN-FRA_SO_Examenes.git
+    3  ./UTN-FRA_SO_Examenes/202406/script_Precondicion.sh
+    4  source ~/.bashrc
+    5  history
+    6  sudo fdisk -l
+    7  sudo fdisk /dev/sdc
+    8  sudo fdisk -l
+    9  sudo fdisk /dev/sdd
+   10  sudo fdisk -l
+   11  sudo pvcreate /dev/sdc1 dev/sdc2 dev/sdd1
+   12  sudo pvcreate /dev/sdc2
+   13  pv create /dev/sdd1
+   14  pvcreate /dev/sdd1
+   15  sudo pvs
+   16  sudo pvcreate /dev/sdd1
+   17  sudo pvd
+   18  sudo pvs
+   19  sudo vgcreate vg_datos /dev/sdc1 /dev/sdd1
+   20  sudo vgcreate vg_temp /dev/sdc2
+   21  sudo vgs
+   22  sudo lvcreate -L +5M vg_datos - lv_docker
+   23  sudo lvs
+   24  sudo lvcreate -L +5M vg_datos -n lv_docker
+   25  sudo lvs
+   26  sudo pvs
+   27  sudo lvcreate -L +1.5G vg_datos -n lv_workareas
+   28  sudo lvs
+   29  sudo pvs
+   30  sudo lvcreate -L +1.48G vg_datos -n lv_workareas
+   31  sudo lvs
+   32  sudo lvcreate -l +512M vg_temp -n lv_docker
+   33  sudo lvcreate -l +512M vg_temp -n lv_swap
+   34  sudo lvcreate -L +512M vg_temp -n lv_swap
+   35  sudo lvcreate -l +100%FREE vg_temp -n lv_swap
+   36  sudo lvs
+   37  sudo fdisk -l
+   38  sudo mkfs.ext4 /dev/mapper/vg_datos-lv_docker
+   39  sudo mkfs.ext4 /dev/mapper/vg_datos-lv_workareas
+   40  sudo mkswap /dev/mapper/vg_temp-lv_swap
+   41  sudo swapon /dev/mapper/vg_temp-lv_swap
+   42  free -h
+   43  cd /var/lib/
+   44  ll
+   45  cd /
+   46  ls
+   47  sudo mkdir work
+   48  ls
+   49  sudo pvs
+   50  sudo vgs
+   51  sudo lvs
+   52  sudo mount /dev/mapper/vg_datos-lv_docker /var/lib/docker/
+   53  sudo mount /dev/mapper/vg_datos-lv_workareas /work/
+   54  df -h
+   55  sudo systemctl restart docker
+   56  sudo systemctl status docker
+   57  history
+   58  bash_history
+   59  .bash_history
+   60  history
+   61  cat .bash_history
+   62  cd
+   63  cat .bash_history
+   64  sudo useradd -m -s /bin/bash -G docker salas
+   65  sudo passwd salas
+   66  sudo su
+   67  cd /etc/
+   68  ls
+   69  cd sudoers.d/
+   70  cat << EOF >> salas
+   71  salas ALL=(ALL) NOPASSWD:ALL
+   72  cat << EOF >> .bash_history
+   73  sudo useradd -m -s /bin/bash -G docker salas
+   74  sudo passwd salas
+   75  sudo su
+   76  cd /etc/
+   77  ls
+   78  cd sudoers.d/
+   79  cat << EOF >> salas
+   80  salas ALL=(ALL) NOPASSWD:ALL
+   81  EOF
+   82  cat .bash_history
+   83  cd usr/local/bin/
+   84  ll
+   85  sudo vim Salas_Alta_User-Grupos.sh
+   86  ll
+   87  sudo chmod 777 SalasAltaUser-Groups.sh
+   88  sudo chmod 777 Salas_Alta_User-Grupos.sh
+   89  ll
+   90  Salas_Alta_User-Grupos.sh
+   91  cd /
+   92  git clone https://github.com/upszot/UTN-FRA_SO_Examenes.git
+   93  sudo git clone https://github.com/upszot/UTN-FRA_SO_Examenes.git
+   94  cd usr/local/bin/
+   95  ll
+   96  cd /
+   97  ll
+   98  cd <Path-Repo>/202406/docker/
+   99  <Path-Repo>/202406/docker/
+  100  cd Path-Repo/202406/docker/
+  101  cd UTN-FRA_SO_Examenes/
+  102  ll
+  103  cd 202406/
+  104  ll
+  105  cd docker/
+  106  ll
+  107  docker --version
+  108  cd /
+  109  cd UTN-FRA_SO_Examenes/
+  110  cd 202406/
+  111  ll
+  112  cd docker/
+  113  cat index.html
+  114  cd /
+  115  cd UTN-FRA_SO_Examenes/
+  116  cd 202406/
+  117  cd docker/
+  118  sudo vim index.html
+  119  cat vim index.html
+  120  cat docker-compose.yml
+  121  docker login -u leandrosalas
+  122  sudo vim dockerfile
+  123  cat dockerfile
+  124  docker build -t leandrosalas/web1-salas:latest
+  125  docker build -t leandrosalas/web1-salas:latest .
+  126  docker run -d -p 8080:80 leandrosalas/web1-salas
+  127  sudo vim run.sh
+  128  vim run.sh
+  129  cd UTN-FRA_SO_Examenes/
+  130  cd /
+  131  cd UTN-FRA_SO_Examenes/
+  132  cd 202406/docker
+  133  sudo vim run.sh
+  134  sudo -d vim run.sh
+  135  sudo vim run.sh -d
+  136  cat run.sh
+  137  cd/
+  138  cd /
+  139  ll
+  140  cd UTN-FRA_SO_Examenes/
+  141  LL
+  142  ll
+  143  cd 202406
+  144  ll
+  145  cd ansible
+  146  ll
+  147  cd roles/
+  148  ll
+  149  cd 2do_parcial/
+  150  ll
+  151  cd tasks
+  152  ll
+  153  sudo vim main.yml
+  154  sudo mkdir templates
+  155  cd /
+  156  cd mkdir
+  157  cd mkdir/
+  158  ll
+  159  cd UTN-FRA_SO_Examenes/
+  160  ll
+  161  cd 202406/
+  162  cd ansible
+  163  cd roles
+  164  cd 2do_parcial/
+  165  cd task/
+  166  ll
+  167  cd tasks/
+  168  ll
+  169  cd templates
+  170  ll
+  171  udo vim template1.j2
+  172  sudo vim template1.j2
+  173  ll
+  174  cat template1.j2
+  175  sudo vim template2.j2
+  176  ll
+  177  sudo vim template2.j2
+  178  ll
+  179  sudo vim template1.j2
+  180  pwd
+  181  ll
+  182  sudo vim template2.j2
+  183  ll
+  184  cd tasks
+  185  cd task
+  186  cd
+  187  ll
+  188  cd task
+  189  cd tasks
+  190  cd UTN-FRA_SO_Examenes/
+  191  ll
+  192  cd 202406/ansible/roles
+  193  cd 2do_parcial
+  194  cd tasks
+  195  ll
+  196  cat main.yml
+  197  sudo vim main.yml
+  198  cat vim main.yml
+  199  ll
+  200  main.yml
+  201  cd..
+  202  cd
+  203  cd /UTN-FRA_SO_Examenes/202406/ansible/
+  204  ll
+  205  ansible-playbook -i inventory/hosts playbook.yml
+  206  cd /
+  207  mkdir RTA_Examen_25_06_25
+  208  sudo mkdir RTA_Examen_25_06_25
+  209  RTA_Examen_25_06_25
+  210  su salas
+  211  git@github.com:SalasLeandro/UTNFRA_SO_2do_TP_Salas.git
+  212  git clone git@github.com:SalasLeandro/UTNFRA_SO_2do_TP_Salas.git
+  213  sudo git clone git@github.com:SalasLeandro/UTNFRA_SO_2do_TP_Salas.git
+  214  sudo ssh-keygen
+  215  cd /
+  216  pwd
+  217  cd/
+  218  cd /
+  219  ls -la
+  220  cd .ssh
+  221  cd sbin
+  222  ll
+  223  cd /
+  224  ll
+  225  cd UTN-FRA_SO_Examenes
+  226  ll
+  227  cd .git
+  228  ls
+  229  cd /
+  230  /home/salas
+  231  cd /home/salas/
+  232  pwd
+  233  ls -la
+  234  cd /
+  235  cd /home
+  236  ls
+  237  cd /home/salas
+  238  ssh-keygen
+  239  pwd
+  240  ls -la
+  241  cd .ssh
+  242  ls -la
+  243  cat id_rsa.pub
+  244  git --version
+  245  git clone git@github.com:SalasLeandro/UTNFRA_SO_2do_TP_Salas.git
+  246  cd /
+  247  ll
+  248  cd RTA_Examen_25_06_25/
+  249  sudo vim Punto_A.sh
+  250  sudo vim Punto_B.sh
+  251  sudo vim Punto_C.sh
+  252  sudo vim Punto_D.sh
+  253  cat Punto_A.sh
+  254  cat Punto_D.sh
+  255  cat Punto_B.sh
+  256  cat cat Punto_A.sh
+  257  history
+  258  history -a
+  259  history
+  260  ll
+  261  git add Punto_A.sh
+  262  git push Punto_A.sh
+  263  git push origin main
+  264  sudo git push origin main
+  265  cd /
+  266  cd home/salas
+  267  git clone git@github.com:SalasLeandro/UTNFRA_SO_2do_TP_Salas.git
+  268  ll
+  269  cd UTNFRA_SO_2do_TP_Salas
+  270  LL
+  271  ll
+  272  .git
+  273  cd/
+  274  cd (
+  275  cd /
+  276  cd home/salas
+  277  ll
+  278  cd RTA_Examen_20250622
+  279  ll
+  280  git add Punto_A.sh
+  281  ll
+  282  git push origin main
+  283  sudo git add Punto_A.sh
+  284  git status
+  285  git remote add origin git@github.com:SalasLeandro/UTNFRA_SO_2do_TP_Salas.git
+  286  cd /
+  287  cd /home/salas
+  288  git remote add origing
+  289  git remote add origin git@github.com:SalasLeandro/UTNFRA_SO_2do_TP_Salas.git
+  290  sudo git remote add origin git@github.com:SalasLeandro/UTNFRA_SO_2do_TP_Salas.git
+  291  git init
+  292  ll
+  293  cd UTNFRA_SO_2do_TP_Salas
+  294  ll
+  295  cd /
+  296  cd RTA_Examen_20250622
+  297  cd /RTA_Examen_20250622
+  298  cd RTA_Examen_20250622/
+  299  ll
+  300  cd /
+  301  ll
+  302  cd RTA_Examen_25_06_25/
+  303  ll
+  304  cat Punto_A.sh
+  305  git add Punto_A.sh
+  306  cd /
+  307  git add Punto_A.sh
+  308  cd home/salas
+  309  git add Punto_A.sh
+  310  ll
+  311  git add .viminfo
+  312  cd UTNFRA_SO_2do_TP_Salas
+  313  ll
+  314  ..
+  315  .
+  316  ll
+  317  cd..
+  318  cd.
+  319  cd /
+  320  cd /home/salas
+  321  ll
+  322  mkdir RTA_Examen_25_06_25
+  323  cd RTA_Examen_25_06_25
+  324  sudo vim Punto_A.sh
+  325  sudo vim Punto_B.sh
+  326  sudo vim Punto_C.sh
+  327  sudo vim Punto_D.sh
+  328  git add Punto_A.sh
+  329  git status
+  330  ll
+  331  cd /
+  332  cd home/salas
+  333  ll
+  334  cd RTA_Examen_25_06_25/
+  335  ll
+  336  cat Punto_D.sh
+  337  cat Punto_C.sh
+  338  git add Punto_A.sh
+  339  git add Punto_B.sh
+  340  git add Punto_C.sh
+  341  git add Punto_D.sh
+  342  git push origin main
+  343  git init
+  344  git remote add origin git@github.com:SalasLeandro/UTNFRA_SO_2do_TP_Salas.git
+  345  git push -u origin main
+  346  cd/
+  347  cd /
+  348  cd home/salas
+  349  git config --global user.name "SalasLeandro"
+  350  git config --global user.email "salas.leandro987@gmail.com"
+  351  ll
+  352  cd RTA_Examen_25_06_25
+  353  ll
+  354  git init
+  355  git add .
+  356  git commit -m "Primer commit"
+  357  git remote add origin git@github.com:SalasLeandro/UTNFRA_SO_2do_TP_Salas.git
+  358  git push -u origin main
+  359  git status
+  360  cd /
+  361  git status
+  362  cd /home/salas
+  363  git status
+  364  git push -u origin main
+  365  git push Punto_A.sh
+  366  sudo git push origin main
+  367  git init
+  368  git remote add origin git@github.com:SalasLeandro/UTNFRA_SO_2do_TP_Salas.git
+  369  git status
+  370  git push -u origin main
+  371  git add .
+  372  git branch
+  373  ll
+  374  cd git
+  375  cd .git
+  376  ll
+  377  cd -
+  378  rm - r .git
+  379  rm -r .git
+  380  ll
+  381  cd .git
+  382  ll
+  383  rm .r objects
+  384  rm -r objects
+  385  ll
+  386  cd objects
+  387  ll
+  388  cd -
+  389  ll
+  390  rm objects
+  391  cd -
+  392  ll
+  393  cd -
+  394  cd/
+  395  cd /
+  396  cd home/salas
+  397  ll
+  398  git init
+  399  sudo apt install git
+  400  git status
+  401  git add Punto_A.sh
+  402  ll
+  403  cd RTA_Examen_25_06_25/
+  404  ll
+  405  git add Punto_A.sh
+  406  git add Punto_B.sh
+  407  git add Punto_C.sh
+  408  git add Punto_D.sh
+  409  git add .
+  410  git status
+  411  git push -u origin main
+  412  git init
+  413  git status
+  414  git add Punto_A.sh
+  415  git add Punto_B.sh
+  416  git add Punto_C.sh
+  417  git add Punto_D.sh
+  418  git push -u origin main
+  419  git push -u origin master
+  420  ll
+  421  cd /
+  422  ll
+  423  git push -u origin master
+  424  ll
+  451  sudo git push -u origin master
+  452  sudo git add /UTN-FRA_SO_Examenes/202406
+  453  git push -u origin master
+  454  sudo git push -u origin master
+  455  git config --global user.name "SalasLeandro"
+  456  git config --global user.email "salas.leandro987@gmail.com"
+  457  git add /UTN-FRA_SO_Examenes/202406
+  458  sudo git add /UTN-FRA_SO_Examenes/202406
+  459  sudo git push -u origin master
+  460  ll
+  461  cd /
+  462  ll
+  463  cd /home/salas
+  464  ll
+  465  git add .bash_history
+  466  git push -u origin master
+  467  git remote add origin git@github.com:SalasLeandro/UTNFRA_SO_2do_TP_Salas.git
+  468  git init
+  469  git add .bash_history
+  470  git push -u origin master
+  471  sudo git push -u origin master
+  472  git push -u origin salas
+  473  history
